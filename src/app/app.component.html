@@ -1,0 +1,35 @@
+<div class="wrap">
+    <div [style.position]="posStyle" class="add-new-items" [ngStyle]="{'height': showMenu? '100%' : '50px'}">
+
+        <ng-container *ngIf="isSmallScreen">
+          <div class="but-wrap">
+        <input (click)="changePos()" id="burger" type="checkbox" [(ngModel)]="showMenu" />
+        <label for="burger">
+          <p class="burger-container">
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+        </label>
+      </div>
+    </ng-container>
+  
+        <ng-container *ngIf="showMenu === true">
+        <app-addtask  class="as"></app-addtask>
+        </ng-container>
+    </div>
+
+    <div class="main-view">
+        <app-list></app-list>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
