@@ -8,7 +8,7 @@ Working on this project,
 
 I better understood how to manipulate DOM,
 
-use of CDK materials ('Layout', 'Drag&Drop'),
+use of CDK materials ('Drag&Drop'),
 
 work with BehaviourSubject,
 
